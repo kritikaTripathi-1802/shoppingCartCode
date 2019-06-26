@@ -1,0 +1,42 @@
+[
+    {
+        "type": "Mobile",
+       "items": [
+            {
+                "item": "Samsung",
+                "price": "12000",
+                "description": "samsung....Mobile desc...................abcccccccccccccccccccccccccccccccc"
+            },
+            {
+                "item": "Nokia",
+                "price": "10000",
+                "description": "Nokia mobileabcccccccccccccccccccccccccccccccc"
+            },
+            {
+                "item": "Reliance",
+                "price": "10000",
+                "description": "Reliance mobileabcccccccccccccccccccccccccccccccc"
+            },
+            {
+                "item": "Redmi",
+                "price": "10000",
+                "description": "Redmi mobileabcccccccccccccccccccccccccccccccc"
+            }
+        ]
+    },
+    {
+        "type": "HeadPhone",
+       "items": [
+            {
+                "item": "JBL",
+                "price": "12000",
+                "description": "jbl descabcccccccccccccccccccccccccccccccc"
+            },
+            {
+                "item": "Bose",
+                "price": "17000",
+                "description": "Bose desc  abcccccccccccccccccccccccccccccccc"
+            }
+        ]
+    }
+]

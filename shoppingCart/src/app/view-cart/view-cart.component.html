@@ -1,0 +1,10 @@
+<div id="light" class="white_content">
+    <div class="closeBtnCss" (click)="closePopup()">Close</div>
+<div id="item_in_cart" *ngFor="let item of addItemIncartInput; index as i;" class="cartItem">
+    <div class="itemDetailClass"><label class="font-size">{{i+1}}.  </label><label class="font-size"><b>Name</b></label> :<label class="font-size"><b>{{item.item}}</b></label> <label class="font-size" style="padding-left: 10px;"><b>Price</b></label> :   <label class="font-size"><b>{{item.price}}</b></label> </div>
+    <!-- <div class="itemDetailClass"><label class="font-size"><b>Price</b></label> :   <label class="font-size"><b>{{item.price}}</b></label> </div> -->
+</div>
+<div class="itemDetailClass"><label class="font-size">Total Price:  </label><label>{{totalPrice}} Rs</label></div>
+
+</div>
+<div id="fade" class="black_overlay"></div>

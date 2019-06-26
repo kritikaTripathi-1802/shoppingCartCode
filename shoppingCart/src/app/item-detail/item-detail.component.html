@@ -1,0 +1,13 @@
+<div id="light" class="white_content">
+    <div id="selectedItem">
+        <div class="closeBtnCss" (click)="closePopup()">Close</div>
+      
+        <div class="itemDetailClass"><label class="font-size"><b>Name</b></label> :<label class="font-size"><b>{{selectedItem.item}}</b></label> </div>
+        <div class="itemDetailClass"><label class="font-size"><b>Price</b></label> :   <label class="font-size"><b>{{selectedItem.price}}</b></label> </div>
+        <div class="itemDetailClass"><label class="font-size"><b>Description</b></label> :   <label class="font-size"><b>{{selectedItem.description}}</b></label></div> 
+    </div>
+   
+    <button class="btnClass" (click)="buyThis();">Buy Now</button>
+
+  </div>
+  <div id="fade" class="black_overlay"></div>

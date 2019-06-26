@@ -1,0 +1,27 @@
+<div id="shoppingCart" class="cart" style="overflow: hidden;" *ngIf="selectedItemFromCart">
+<label  style="float: right;"><b style="color:brown;cursor: pointer;" (click)="showCartItems()">View Cart ({{addItemIncart.length}})</b></label> 
+</div>
+<div id="shoppingItems">
+<div class="shoppingElectonicItem" style="overflow: hidden;" *ngFor="let type of shoppingData">
+<h2 class="headerCss">{{type.type}}</h2>
+<div id="itemCards" class="card width cardCss" style="float: left;margin-bottom: 10px;" *ngFor="let item of type.items" (click)="openDetail(item)">
+  
+    <div class="container">
+      <label for="item" class="font-size"><b>Item Name:  </b></label>
+      <label class="font-size"><b>{{item.item}}</b></label>
+      <br><br><br>
+      <label for="item" class="font-size"><b>Item Price:  </b></label>
+      <label class="font-size"><b>Rs {{item.price}}</b></label>
+      <!-- <h4><b>{{item.item}}</b></h4> 
+      <p>{{item.price}}</p>  -->
+    </div>
+
+</div>
+</div>
+<div id="popup" *ngIf="showPopup">
+<app-item-detail [selectedItem]="selectedItem" (closeEvent)="closePopupEvent($event);" (addToCart)="add($event)"></app-item-detail>
+</div>
+<app-view-cart *ngIf="showCart" [addItemIncartInput]="addItemIncart" (closeEvent)="closePopupCart($event);"></app-view-cart>
+
+
+</div>
